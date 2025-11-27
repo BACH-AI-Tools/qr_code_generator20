@@ -1,0 +1,325 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Qr Code Generator20",
+    "version": "1.0.0",
+    "description": "RapidAPI: hydrone/qr-code-generator20"
+  },
+  "servers": [
+    {
+      "url": "https://qr-code-generator20.p.rapidapi.com"
+    }
+  ],
+  "paths": {
+    "/generateadvanceimage": {
+      "get": {
+        "summary": "Generate Advance - Direct Image",
+        "description": "Generates a QR code as a direct image with additional settings. (NOTE: doesn't show correctly in RapidAPI)",
+        "operationId": "generate_advance___direct_image",
+        "parameters": [
+          {
+            "name": "data",
+            "in": "query",
+            "required": true,
+            "description": "Example value: 1234",
+            "schema": {
+              "type": "string",
+              "default": null,
+              "enum": null
+            }
+          },
+          {
+            "name": "size",
+            "in": "query",
+            "required": false,
+            "description": "Example value: 500",
+            "schema": {
+              "type": "string",
+              "default": "500",
+              "enum": null
+            }
+          },
+          {
+            "name": "margin",
+            "in": "query",
+            "required": false,
+            "description": "Example value: 10",
+            "schema": {
+              "type": "string",
+              "default": "10",
+              "enum": null
+            }
+          },
+          {
+            "name": "label",
+            "in": "query",
+            "required": false,
+            "description": "Example value: My label",
+            "schema": {
+              "type": "string",
+              "default": null,
+              "enum": null
+            }
+          },
+          {
+            "name": "label_size",
+            "in": "query",
+            "required": false,
+            "description": "Example value: 20",
+            "schema": {
+              "type": "string",
+              "default": "20",
+              "enum": null
+            }
+          },
+          {
+            "name": "label_alignment",
+            "in": "query",
+            "required": false,
+            "description": "Example value: center",
+            "schema": {
+              "type": "string",
+              "default": null,
+              "enum": null
+            }
+          },
+          {
+            "name": "foreground_color",
+            "in": "query",
+            "required": false,
+            "description": "Example value: FF2400",
+            "schema": {
+              "type": "string",
+              "default": null,
+              "enum": null
+            }
+          },
+          {
+            "name": "background_color",
+            "in": "query",
+            "required": false,
+            "description": "Example value: 00DBFF",
+            "schema": {
+              "type": "string",
+              "default": null,
+              "enum": null
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/generatebasicbase64": {
+      "get": {
+        "summary": "Generate Basic - Base64",
+        "description": "Generates a QR code as base64 with limited settings.",
+        "operationId": "generate_basic___base64",
+        "parameters": [
+          {
+            "name": "data",
+            "in": "query",
+            "required": true,
+            "description": "Example value: 1234",
+            "schema": {
+              "type": "string",
+              "default": null,
+              "enum": null
+            }
+          },
+          {
+            "name": "size",
+            "in": "query",
+            "required": false,
+            "description": "Example value: 500",
+            "schema": {
+              "type": "string",
+              "default": "500",
+              "enum": null
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/generateadvancebase64": {
+      "get": {
+        "summary": "Generate Advance - Base64",
+        "description": "Generates a QR code as base64 with additional settings.",
+        "operationId": "generate_advance___base64",
+        "parameters": [
+          {
+            "name": "data",
+            "in": "query",
+            "required": true,
+            "description": "Example value: 1234",
+            "schema": {
+              "type": "string",
+              "default": null,
+              "enum": null
+            }
+          },
+          {
+            "name": "size",
+            "in": "query",
+            "required": false,
+            "description": "Example value: 500",
+            "schema": {
+              "type": "string",
+              "default": "500",
+              "enum": null
+            }
+          },
+          {
+            "name": "margin",
+            "in": "query",
+            "required": false,
+            "description": "Example value: 10",
+            "schema": {
+              "type": "string",
+              "default": "10",
+              "enum": null
+            }
+          },
+          {
+            "name": "label",
+            "in": "query",
+            "required": false,
+            "description": "Example value: My label",
+            "schema": {
+              "type": "string",
+              "default": null,
+              "enum": null
+            }
+          },
+          {
+            "name": "label_size",
+            "in": "query",
+            "required": false,
+            "description": "Example value: 20",
+            "schema": {
+              "type": "string",
+              "default": "20",
+              "enum": null
+            }
+          },
+          {
+            "name": "label_alignment",
+            "in": "query",
+            "required": false,
+            "description": "Example value: center",
+            "schema": {
+              "type": "string",
+              "default": null,
+              "enum": null
+            }
+          },
+          {
+            "name": "foreground_color",
+            "in": "query",
+            "required": false,
+            "description": "Example value: FF2400",
+            "schema": {
+              "type": "string",
+              "default": null,
+              "enum": null
+            }
+          },
+          {
+            "name": "background_color",
+            "in": "query",
+            "required": false,
+            "description": "Example value: 00DBFF",
+            "schema": {
+              "type": "string",
+              "default": null,
+              "enum": null
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/generatebasicimage": {
+      "get": {
+        "summary": "Generate Basic - Direct Image",
+        "description": "Generates a QR code as a direct image with limited settings. (NOTE: doesn't show correctly in RapidAPI)",
+        "operationId": "generate_basic___direct_image",
+        "parameters": [
+          {
+            "name": "data",
+            "in": "query",
+            "required": true,
+            "description": "Example value: 1234",
+            "schema": {
+              "type": "string",
+              "default": null,
+              "enum": null
+            }
+          },
+          {
+            "name": "size",
+            "in": "query",
+            "required": false,
+            "description": "Example value: 500",
+            "schema": {
+              "type": "string",
+              "default": "500",
+              "enum": null
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "ApiAuth": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "X-RapidAPI-Key"
+      }
+    }
+  },
+  "security": [
+    {
+      "ApiAuth": []
+    }
+  ]
+}
