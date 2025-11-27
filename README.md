@@ -33,7 +33,7 @@
 这是一个 MCP 服务器，用于访问 Qr Code Generator20 API。
 
 - **PyPI 包名**: `bach-qr_code_generator20`
-- **版本**: 1.0.0
+- **版本**: 2.0.0
 - **传输协议**: stdio
 
 
@@ -232,4 +232,4 @@ Generates a QR code as a direct image with limited settings. (NOTE: doesn't show
 
 此服务器由 [API-to-MCP](https://github.com/BACH-AI-Tools/api-to-mcp) 工具自动生成。
 
-版本: 1.0.0
+版本: 2.0.0
